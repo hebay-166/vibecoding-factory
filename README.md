@@ -74,3 +74,4 @@ Hand the agent a task ("users report the password reset email arrives twice, fix
 - [eve Personal Agent](https://vercel.com/templates/nuxt/eve-personal-agent)
 - [eve Sanity Copilot](https://vercel.com/templates/eve/eve-sanity-copilot)
 # vibecoding-factory
+# Connector: github/vibecoding-factory
