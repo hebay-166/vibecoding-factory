@@ -99,8 +99,10 @@ export const FACTORY_BRANCH_PREFIX =
  * const { token } = await ctx.getToken(linearAuth);
  * ```
  */
+// Phase 1: LINEAR_CONNECTOR optional (set via Vercel Connect when Linear is properly connected).
+// Placeholder lets the build pass; Linear channel won't work until a real connector is set up.
 export const linearAuth = connect({
-  connector: requireEnv("LINEAR_CONNECTOR", "linear/foreman-agent"),
+  connector: process.env.LINEAR_CONNECTOR ?? "linear/placeholder",
   principalType: "app",
   tokenParams: {
     scopes: ["read", "write", "issues:create", "comments:create"],
